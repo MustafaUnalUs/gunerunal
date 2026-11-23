@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Güner Ünal · Saç Sanatçısı · Denizli</title>
+<meta name="description" content="Güner Ünal — 1983'ten bu yana saçla çalışan Denizli'li saç sanatçısı. Kişiye özel kesim, renk ve yıpranmış saç onarımı. Randevu: 0 258 265 70 66.">
+<meta name="theme-color" content="#101010">
+<link rel="canonical" href="https://gunerunal.com.tr/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Güner Ünal · Saç Sanatçısı · Denizli">
+<meta property="og:description" content="1983'ten bu yana saçla çalışan bir usta. Kesim, renk ve onarım — yalnızca randevuyla.">
+<meta property="og:url" content="https://gunerunal.com.tr/">
+<meta property="og:image" content="https://gunerkuafor.com.tr/assets/cizgili-portre.webp">
+<link rel="icon" href="https://gunerkuafor.com.tr/assets/guner-logo.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HairSalon",
+  "name": "Güner Ünal · Güner Kuaför",
+  "founder": {"@type": "Person", "name": "Güner Ünal"},
+  "url": "https://gunerunal.com.tr/",
+  "image": "https://gunerkuafor.com.tr/assets/salondan.webp",
+  "telephone": "+902582657066",
+  "foundingDate": "2002",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Mehmetçik Mahallesi, 2585. Sokak No:1",
+    "addressLocality": "Pamukkale",
+    "addressRegion": "Denizli",
+    "addressCountry": "TR"
+  },
+  "sameAs": ["https://www.instagram.com/gunerkuafor", "https://www.facebook.com/gunerkuafor", "https://gunerkuafor.com.tr"]
+}
+</script>
+<style>
+  /* Görseller şimdilik gunerkuafor.com.tr üzerinden geliyor.
+     Kendi sunucunuza taşırsanız aşağıdaki adresi "assets/" yapmanız yeterli. */
+  :root{
+    --ink:#101010;
+    --ink-2:#1a1816;
+    --paper:#f4efe7;
+    --paper-2:#ebe3d6;
+    --copper:#b8693d;
+    --copper-soft:#d79a72;
+    --muted:#8c8478;
+    --line:rgba(244,239,231,.14);
+    --serif:"Cormorant Garamond", Georgia, serif;
+    --sans:"Manrope", system-ui, sans-serif;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{background:var(--ink);color:var(--paper);font-family:var(--sans);font-weight:300;line-height:1.7;-webkit-font-smoothing:antialiased}
+  img{display:block;max-width:100%}
+  a{color:inherit}
+  .skip{position:absolute;left:-999px;top:0;background:var(--copper);color:#fff;padding:.6rem 1rem;z-index:100}
+  .skip:focus{left:1rem}
+  .wrap{width:min(1180px,92vw);margin-inline:auto}
+
+  /* NAV */
+  header.nav{position:fixed;inset:0 0 auto 0;z-index:50;transition:background .4s,backdrop-filter .4s}
+  header.nav.solid{background:rgba(16,16,16,.86);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+  .nav .wrap{display:flex;align-items:center;justify-content:space-between;height:76px}
+  .brand{font-family:var(--serif);font-size:1.55rem;letter-spacing:.02em;text-decoration:none}
+  .brand em{color:var(--copper-soft);font-style:italic}
+  .nav ul{display:flex;gap:2.2rem;list-style:none}
+  .nav ul a{text-decoration:none;font-size:.78rem;letter-spacing:.22em;text-transform:uppercase;opacity:.8;transition:opacity .2s}
+  .nav ul a:hover{opacity:1}
+  .nav .cta{border:1px solid var(--copper);padding:.55rem 1.1rem;border-radius:999px;color:var(--copper-soft);opacity:1}
+  .menu-btn{display:none;background:none;border:0;color:var(--paper);font:500 .78rem var(--sans);letter-spacing:.22em;cursor:pointer}
+
+  /* HERO */
+  .hero{position:relative;min-height:100svh;display:grid;grid-template-columns:1.05fr .95fr;align-items:stretch}
+  .hero-text{display:flex;flex-direction:column;justify-content:flex-end;padding:9rem 4vw 5rem max(4vw,calc((100vw - 1180px)/2))}
+  .eyebrow{font-size:.74rem;letter-spacing:.32em;text-transform:uppercase;color:var(--copper-soft);margin-bottom:1.6rem;display:flex;align-items:center;gap:.9rem}
+  .eyebrow::before{content:"";width:38px;height:1px;background:var(--copper)}
+  .hero h1{font-family:var(--serif);font-weight:400;font-size:clamp(3.2rem,7.2vw,6.6rem);line-height:.95;letter-spacing:-.01em}
+  .hero h1 em{font-style:italic;color:var(--copper-soft)}
+  .hero p.lead{max-width:30rem;margin-top:2rem;font-size:1.05rem;color:#cfc7ba}
+  .hero-actions{display:flex;gap:1rem;margin-top:2.6rem;flex-wrap:wrap}
+  .btn{display:inline-flex;align-items:center;gap:.7rem;text-decoration:none;font-size:.8rem;letter-spacing:.2em;text-transform:uppercase;padding:1rem 1.6rem;border-radius:999px;transition:transform .25s,background .25s,color .25s}
+  .btn-fill{background:var(--copper);color:#fff}
+  .btn-fill:hover{background:var(--copper-soft);color:var(--ink);transform:translateY(-2px)}
+  .btn-line{border:1px solid var(--line)}
+  .btn-line:hover{border-color:var(--paper)}
+  .hero-img{position:relative;overflow:hidden}
+  .hero-img img{width:100%;height:100%;object-fit:cover;filter:saturate(.92);animation:slowzoom 18s ease-out forwards}
+  .hero-img::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,var(--ink) 0%,rgba(16,16,16,0) 28%)}
+  .since{position:absolute;right:2rem;bottom:2rem;z-index:2;font-family:var(--serif);font-size:1rem;letter-spacing:.3em;writing-mode:vertical-rl;color:var(--paper);opacity:.85}
+  @keyframes slowzoom{from{transform:scale(1.08)}to{transform:scale(1)}}
+
+  /* SECTIONS */
+  section{padding:8rem 0}
+  .sec-head{display:flex;align-items:baseline;gap:1.4rem;margin-bottom:3.5rem}
+  .num{font-family:var(--serif);font-style:italic;color:var(--copper-soft);font-size:1.3rem}
+  .sec-head h2{font-family:var(--serif);font-weight:400;font-size:clamp(2.4rem,4.6vw,3.8rem);line-height:1.05}
+  .light{background:var(--paper);color:var(--ink)}
+  .light .num{color:var(--copper)}
+  .light p{color:#3b3631}
+
+  /* MANIFESTO */
+  .manifesto{padding:7rem 0;text-align:center;border-top:1px solid var(--line)}
+  .manifesto blockquote{font-family:var(--serif);font-size:clamp(1.8rem,3.6vw,3rem);line-height:1.25;max-width:54rem;margin-inline:auto;font-weight:400}
+  .manifesto blockquote em{color:var(--copper-soft)}
+  .manifesto cite{display:block;margin-top:1.8rem;font-style:normal;font-size:.75rem;letter-spacing:.3em;text-transform:uppercase;color:var(--muted)}
+
+  /* YAKLAŞIM */
+  .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-top:1px solid rgba(16,16,16,.15)}
+  .step{padding:2.4rem 2rem 2.4rem 0;border-right:1px solid rgba(16,16,16,.15)}
+  .step+.step{padding-left:2rem}
+  .step:last-child{border-right:0}
+  .step b{display:block;font-family:var(--serif);font-weight:500;font-size:1.7rem;margin:.6rem 0 .8rem;color:var(--ink)}
+  .step small{font-size:.72rem;letter-spacing:.28em;color:var(--copper);font-weight:600}
+
+  /* HİKÂYE */
+  .story{display:grid;grid-template-columns:.9fr 1.1fr;gap:5rem;align-items:center}
+  .story-imgs{position:relative;padding-bottom:18%}
+  .story-imgs .main{aspect-ratio:4/5;object-fit:cover;width:82%}
+  .story-imgs .old{position:absolute;right:0;bottom:0;width:46%;aspect-ratio:3/4;object-fit:cover;border:8px solid var(--ink);filter:grayscale(1)}
+  .story-imgs figcaption{position:absolute;right:0;bottom:-2.2rem;font-size:.72rem;letter-spacing:.25em;color:var(--muted);text-transform:uppercase}
+  .story-text p{color:#cfc7ba;margin-bottom:1.2rem;max-width:34rem}
+  .timeline{list-style:none;margin-top:2.8rem;border-left:1px solid var(--line)}
+  .timeline li{position:relative;padding:0 0 1.8rem 2rem}
+  .timeline li::before{content:"";position:absolute;left:-5px;top:.55rem;width:9px;height:9px;border-radius:50%;background:var(--copper)}
+  .timeline .yr{font-family:var(--serif);font-size:2rem;line-height:1;color:var(--paper)}
+  .timeline span{display:block;color:var(--muted);font-size:.95rem;margin-top:.35rem}
+
+  /* HİZMETLER */
+  .services{display:grid;grid-template-columns:1fr 1fr;gap:2rem}
+  .card{position:relative;overflow:hidden;min-height:560px;display:flex;align-items:flex-end;color:var(--paper)}
+  .card img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform 1.2s ease}
+  .card:hover img{transform:scale(1.05)}
+  .card::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(16,16,16,0) 35%,rgba(16,16,16,.92) 100%)}
+  .card-body{position:relative;z-index:2;padding:2.6rem}
+  .card h3{font-family:var(--serif);font-weight:400;font-size:2.6rem;line-height:1}
+  .card h3 em{color:var(--copper-soft)}
+  .card p{color:#ddd5c8 !important;margin-top:1rem;max-width:28rem}
+  .card ul{list-style:none;display:flex;flex-wrap:wrap;gap:.5rem;margin-top:1.4rem}
+  .card li{font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;border:1px solid rgba(244,239,231,.35);padding:.35rem .8rem;border-radius:999px}
+
+  /* GALERİ */
+  .gallery{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:260px;gap:12px}
+  .gallery button{all:unset;cursor:zoom-in;position:relative;overflow:hidden;display:block}
+  .gallery button:focus-visible{outline:2px solid var(--copper-soft);outline-offset:3px}
+  .gallery img{width:100%;height:100%;object-fit:cover;transition:transform .9s ease,filter .5s}
+  .gallery button:hover img{transform:scale(1.06)}
+  .gallery .tall{grid-row:span 2}
+  .gallery .wide{grid-column:span 2}
+  .gallery .tag{position:absolute;left:.9rem;bottom:.8rem;font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;background:rgba(16,16,16,.6);padding:.3rem .65rem;border-radius:999px;opacity:0;transition:opacity .3s}
+  .gallery button:hover .tag,.gallery button:focus-visible .tag{opacity:1}
+  .gallery-foot{display:flex;justify-content:space-between;align-items:center;margin-top:2.4rem;color:var(--muted);flex-wrap:wrap;gap:1rem}
+
+  .lightbox{position:fixed;inset:0;background:rgba(10,10,10,.95);display:none;align-items:center;justify-content:center;z-index:200;padding:4vh 4vw}
+  .lightbox.open{display:flex}
+  .lightbox img{max-height:84vh;max-width:100%;object-fit:contain}
+  .lightbox p{position:absolute;bottom:3vh;left:0;right:0;text-align:center;color:#cfc7ba;font-size:.85rem;letter-spacing:.12em}
+  .lb-btn{position:absolute;background:none;border:0;color:var(--paper);font-size:2.2rem;cursor:pointer;padding:1rem;font-family:var(--serif)}
+  .lb-close{top:1rem;right:1.5rem}
+  .lb-prev{left:1rem;top:50%;transform:translateY(-50%)}
+  .lb-next{right:1rem;top:50%;transform:translateY(-50%)}
+
+  /* RANDEVU */
+  .contact{display:grid;grid-template-columns:1fr 1fr;gap:0;min-height:620px}
+  .contact-img{position:relative}
+  .contact-img img{width:100%;height:100%;object-fit:cover}
+  .contact-body{background:var(--ink-2);padding:5rem 4.5rem;display:flex;flex-direction:column;justify-content:center}
+  .contact-body h2{font-family:var(--serif);font-weight:400;font-size:clamp(2.4rem,4vw,3.4rem);line-height:1.05;margin:1rem 0 1.4rem}
+  .contact-body > p{color:#cfc7ba;max-width:28rem}
+  .phone{display:block;font-family:var(--serif);font-size:clamp(2rem,3.6vw,3rem);text-decoration:none;color:var(--copper-soft);margin:2.2rem 0 2.6rem;transition:color .2s}
+  .phone:hover{color:var(--paper)}
+  .info{display:grid;grid-template-columns:1fr 1fr;gap:1.8rem;border-top:1px solid var(--line);padding-top:2rem}
+  .info h4{font-size:.7rem;letter-spacing:.28em;text-transform:uppercase;color:var(--muted);font-weight:500;margin-bottom:.5rem}
+  .info a{text-decoration:none;border-bottom:1px solid var(--line)}
+  .info a:hover{border-color:var(--copper-soft)}
+  .socials{display:flex;gap:1.2rem}
+
+  footer{padding:2.4rem 0;border-top:1px solid var(--line);font-size:.8rem;color:var(--muted)}
+  footer .wrap{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap}
+  footer a{text-decoration:none}
+  footer a:hover{color:var(--paper)}
+
+  .reveal{opacity:0;transform:translateY(28px);transition:opacity 1s ease,transform 1s ease}
+  .reveal.in{opacity:1;transform:none}
+
+  /* MOBİL */
+  @media (max-width:900px){
+    .nav ul{display:none;position:absolute;top:76px;left:0;right:0;flex-direction:column;gap:0;background:var(--ink);border-bottom:1px solid var(--line)}
+    .nav ul.open{display:flex}
+    .nav ul li a{display:block;padding:1.1rem 4vw;border-top:1px solid var(--line)}
+    .nav .cta{border:0;border-radius:0}
+    .menu-btn{display:block}
+    .hero{grid-template-columns:1fr;min-height:auto}
+    .hero-img{order:-1;height:62svh}
+    .hero-img::after{background:linear-gradient(180deg,rgba(16,16,16,0) 55%,var(--ink) 100%)}
+    .hero-text{padding:0 4vw 4rem}
+    .since{display:none}
+    section{padding:5.5rem 0}
+    .steps{grid-template-columns:1fr}
+    .step,.step+.step{padding:2rem 0;border-right:0;border-bottom:1px solid rgba(16,16,16,.15)}
+    .story{grid-template-columns:1fr;gap:4.5rem}
+    .services{grid-template-columns:1fr}
+    .card{min-height:460px}
+    .gallery{grid-template-columns:repeat(2,1fr);grid-auto-rows:200px}
+    .gallery .wide{grid-column:span 2}
+    .contact{grid-template-columns:1fr}
+    .contact-img{height:340px}
+    .contact-body{padding:3.5rem 4vw}
+    .info{grid-template-columns:1fr}
+  }
+  @media (prefers-reduced-motion:reduce){
+    *{animation:none !important;transition:none !important}
+    .reveal{opacity:1;transform:none}
+  }
+</style>
+</head>
+<body>
+<a class="skip" href="#icerik">İçeriğe geç</a>
+
+<header class="nav" id="nav">
+  <div class="wrap">
+    <a class="brand" href="#top">Güner <em>Ünal</em></a>
+    <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="menu">MENÜ</button>
+    <ul id="menu">
+      <li><a href="#yaklasim">Yaklaşım</a></li>
+      <li><a href="#hikaye">Hikâye</a></li>
+      <li><a href="#hizmetler">Hizmetler</a></li>
+      <li><a href="#calismalar">Çalışmalar</a></li>
+      <li><a class="cta" href="#randevu">Randevu</a></li>
+    </ul>
+  </div>
+</header>
+
+<main id="icerik">
+  <!-- HERO -->
+  <section class="hero" id="top" style="padding:0">
+    <div class="hero-text">
+      <div class="eyebrow">Saç Sanatı &amp; Onarım · Denizli</div>
+      <h1>Her saç<br><em>aynı</em> değildir.</h1>
+      <p class="lead">1983'ten bu yana makas elinde. Güner Ünal, her saçı kendi geçmişiyle dinler; kesimi, rengi ve onarımı ona göre kurar.</p>
+      <div class="hero-actions">
+        <a class="btn btn-fill" href="tel:+902582657066">Randevu Al →</a>
+        <a class="btn btn-line" href="#calismalar">Çalışmaları Gör</a>
+      </div>
+    </div>
+    <div class="hero-img">
+      <img src="https://gunerkuafor.com.tr/assets/acilis-duzenlenmis.webp" alt="Salonda uzun, koyu ve dalgalı saçlı bir müşteri portresi" fetchpriority="high">
+      <div class="since">SINCE 1983</div>
+    </div>
+  </section>
+
+  <!-- MANİFESTO -->
+  <div class="manifesto">
+    <div class="wrap reveal">
+      <blockquote>“Önce saçı dinlerim. Ne istediğinizi, saçınızın neler yaşadığını ve <em>neyin gerçekten mümkün</em> olduğunu konuşuruz. Makas ondan sonra gelir.”</blockquote>
+      <cite>— Güner Ünal</cite>
+    </div>
+  </div>
+
+  <!-- YAKLAŞIM -->
+  <section class="light" id="yaklasim">
+    <div class="wrap">
+      <div class="sec-head reveal"><span class="num">01</span><h2>Yaklaşım</h2></div>
+      <div class="steps">
+        <div class="step reveal">
+          <small>DİNLEMEK</small>
+          <b>Beklenti</b>
+          <p>Nasıl görünmek istediğinizi, günlük hayatınızı ve saçınıza ne kadar zaman ayırdığınızı konuşarak başlarız.</p>
+        </div>
+        <div class="step reveal">
+          <small>DEĞERLENDİRMEK</small>
+          <b>Saçın geçmişi</b>
+          <p>Boyalar, işlemler, yıpranma… Saçın bugüne kadar yaşadıklarını inceler; neyin mümkün olduğunu açıkça söyleriz.</p>
+        </div>
+        <div class="step reveal">
+          <small>BİRLİKTE KARAR</small>
+          <b>Ortak yol</b>
+          <p>Sınırları ve olasılıkları bilerek, size ve saçınıza en uygun yolu birlikte seçeriz. Sürpriz yok, net bir plan var.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HİKÂYE -->
+  <section id="hikaye">
+    <div class="wrap story">
+      <figure class="story-imgs reveal">
+        <img class="main" src="https://gunerkuafor.com.tr/assets/cizgili-portre.webp" alt="Güner Ünal portresi, Denizli" loading="lazy">
+        <img class="old" src="https://gunerkuafor.com.tr/assets/guner-1983.webp" alt="Güner Ünal'ın mesleğe başladığı yıllardan siyah-beyaz portre" loading="lazy">
+        <figcaption>1983</figcaption>
+      </figure>
+      <div class="story-text reveal">
+        <div class="sec-head" style="margin-bottom:2rem"><span class="num">02</span><h2>Kırk yılı aşan<br>bir el emeği</h2></div>
+        <p>Güner Ünal mesleğe 1983'te adım attı. Yıllar içinde teknikler, ürünler ve modalar değişti; o da her değişimi eğitimlerle takip etti, öğrendiğini atölyedeki deneyimiyle harmanladı.</p>
+        <p>2002'de Denizli'de kendi salonunu açtı. Bugün aynı özenle, kendisine güvenen müşterilerinin saçını yıllardır emanet aldığı bu salonda çalışmaya devam ediyor.</p>
+        <ul class="timeline">
+          <li><div class="yr">1983</div><span>Mesleğe ilk adım</span></li>
+          <li><div class="yr">2002</div><span>Kendi salonunun açılışı — Pamukkale, Denizli</span></li>
+          <li><div class="yr">Bugün</div><span>Kırk yılı aşkın deneyim, yalnızca randevuyla</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- HİZMETLER -->
+  <section class="light" id="hizmetler">
+    <div class="wrap">
+      <div class="sec-head reveal"><span class="num">03</span><h2>Saç Sanatı &amp; Onarım</h2></div>
+      <div class="services">
+        <article class="card reveal">
+          <img src="https://gunerkuafor.com.tr/assets/sari-dalga.webp" alt="Sarı tonlarda uzun, dalgalı saç" loading="lazy">
+          <div class="card-body">
+            <h3>Saç <em>Sanatı</em></h3>
+            <p>Kesim ve renk, yüzünüzle ve ifadenizle uyum içinde olmalı. Her çalışma, sizin için tasarlanan tek bir sonuçtur.</p>
+            <ul><li>Kesim</li><li>Renk</li><li>Şekillendirme</li><li>Özel gün</li></ul>
+          </div>
+        </article>
+        <article class="card reveal">
+          <img src="https://gunerkuafor.com.tr/assets/uzun-bakir.webp" alt="Uzun bakır saçta arkadan dalgalı görünüm" loading="lazy">
+          <div class="card-body">
+            <h3><em>Onarım</em></h3>
+            <p>Yıpranmış, yanlış işlem görmüş saçı adım adım toparlarız: biçimini, dengesini ve canlılığını geri kazandırırız.</p>
+            <ul><li>Yıpranma analizi</li><li>Onarıcı bakım</li><li>Renk düzeltme</li></ul>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ÇALIŞMALAR -->
+  <section id="calismalar">
+    <div class="wrap">
+      <div class="sec-head reveal"><span class="num">04</span><h2>Çalışmalar</h2></div>
+      <div class="gallery reveal" id="gallery">
+        <button class="tall" data-i="0"><img src="https://gunerkuafor.com.tr/assets/gelin.webp" alt="Duvaklı gelin için uzun, koyu ve dalgalı saç" loading="lazy"><span class="tag">Gelin</span></button>
+        <button data-i="1"><img src="https://gunerkuafor.com.tr/assets/kisa-sari.webp" alt="Kısa, açık renk saç kesiminin yandan görünümü" loading="lazy"><span class="tag">Kısa kesim</span></button>
+        <button data-i="2"><img src="https://gunerkuafor.com.tr/assets/kut-kesim.webp" alt="Açık renk küt kesimin arkadan görünümü" loading="lazy"><span class="tag">Küt kesim</span></button>
+        <button class="tall" data-i="3"><img src="https://gunerkuafor.com.tr/assets/uzun-bakir.webp" alt="Uzun bakır saçta arkadan dalgalı görünüm" loading="lazy"><span class="tag">Bakır dalga</span></button>
+        <button data-i="4"><img src="https://gunerkuafor.com.tr/assets/duz-kesim.webp" alt="Düz kesim çalışması" loading="lazy"><span class="tag">Düz kesim</span></button>
+        <button data-i="5"><img src="https://gunerkuafor.com.tr/assets/kisa-kivircik.webp" alt="Kısa kıvırcık saçta açık renk tutamlar" loading="lazy"><span class="tag">Kıvırcık</span></button>
+        <button class="wide" data-i="6"><img src="https://gunerkuafor.com.tr/assets/salondan.webp" alt="Salonun gün ışığı alan çalışma alanı ve aynaları" loading="lazy"><span class="tag">Salon</span></button>
+        <button class="wide" data-i="7"><img src="https://gunerkuafor.com.tr/assets/sari-dalga.webp" alt="Sarı tonlarda uzun, dalgalı saç" loading="lazy"><span class="tag">Sarı dalga</span></button>
+      </div>
+      <div class="gallery-foot">
+        <span>Daha fazla çalışma için Instagram'ı ziyaret edin.</span>
+        <a class="btn btn-line" href="https://www.instagram.com/gunerkuafor" target="_blank" rel="noopener">@gunerkuafor →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- RANDEVU -->
+  <section id="randevu" style="padding:0">
+    <div class="contact">
+      <div class="contact-img">
+        <img src="https://gunerkuafor.com.tr/assets/salon-giris.webp" alt="Salonun bahçesindeki tabela ve giriş yolu" loading="lazy">
+      </div>
+      <div class="contact-body reveal">
+        <div class="eyebrow"><span class="num" style="font-size:1.1rem">05</span>&nbsp;Randevu</div>
+        <h2>Size ayrılmış<br>bir zaman.</h2>
+        <p>Her müşteriye acele etmeden zaman ayırabilmek için yalnızca randevuyla çalışıyoruz. Bir telefonla yerinizi ayırtabilirsiniz.</p>
+        <a class="phone" href="tel:+902582657066">0 258 265 70 66</a>
+        <div class="info">
+          <div>
+            <h4>Adres</h4>
+            <p>Mehmetçik Mahallesi<br>2585. Sokak No:1<br>Pamukkale / Denizli</p>
+            <p style="margin-top:.6rem"><a href="https://www.google.com/maps/search/?api=1&query=Mehmet%C3%A7ik+Mahallesi+2585.+Sokak+No%3A1+Pamukkale+Denizli" target="_blank" rel="noopener">Haritada aç →</a></p>
+          </div>
+          <div>
+            <h4>Takip edin</h4>
+            <div class="socials">
+              <a href="https://www.instagram.com/gunerkuafor" target="_blank" rel="noopener">Instagram</a>
+              <a href="https://www.facebook.com/gunerkuafor" target="_blank" rel="noopener">Facebook</a>
+            </div>
+            <h4 style="margin-top:1.4rem">Salon sitesi</h4>
+            <a href="https://gunerkuafor.com.tr" target="_blank" rel="noopener">gunerkuafor.com.tr</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© <span id="yr">2026</span> Güner Ünal · Saç Sanatı &amp; Onarım · Denizli</span>
+    <a href="#top">Başa dön ↑</a>
+  </div>
+</footer>
+
+<div class="lightbox" id="lb" role="dialog" aria-modal="true" aria-label="Çalışma görseli">
+  <button class="lb-btn lb-close" id="lbClose" aria-label="Kapat">×</button>
+  <button class="lb-btn lb-prev" id="lbPrev" aria-label="Önceki">‹</button>
+  <img id="lbImg" alt="">
+  <button class="lb-btn lb-next" id="lbNext" aria-label="Sonraki">›</button>
+  <p id="lbCap"></p>
+</div>
+
+<script>
+  document.getElementById('yr').textContent = new Date().getFullYear();
+
+  // Kayan menü arka planı
+  const nav = document.getElementById('nav');
+  const onScroll = () => nav.classList.toggle('solid', window.scrollY > 40);
+  window.addEventListener('scroll', onScroll, {passive:true}); onScroll();
+
+  // Mobil menü
+  const menuBtn = document.getElementById('menuBtn'), menu = document.getElementById('menu');
+  menuBtn.addEventListener('click', () => {
+    const open = menu.classList.toggle('open');
+    menuBtn.setAttribute('aria-expanded', open);
+    menuBtn.textContent = open ? 'KAPAT' : 'MENÜ';
+  });
+  menu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+    menu.classList.remove('open'); menuBtn.textContent = 'MENÜ'; menuBtn.setAttribute('aria-expanded', false);
+  }));
+
+  // Görünür olunca belirme
+  const io = new IntersectionObserver(es => es.forEach(e => {
+    if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+  }), {threshold:.12});
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+  // Galeri büyütme
+  const items = [...document.querySelectorAll('#gallery button')];
+  const lb = document.getElementById('lb'), lbImg = document.getElementById('lbImg'), lbCap = document.getElementById('lbCap');
+  let cur = 0;
+  const show = i => {
+    cur = (i + items.length) % items.length;
+    const img = items[cur].querySelector('img');
+    lbImg.src = img.src; lbImg.alt = img.alt; lbCap.textContent = img.alt;
+  };
+  items.forEach((b, i) => b.addEventListener('click', () => { show(i); lb.classList.add('open'); document.getElementById('lbClose').focus(); }));
+  const close = () => { lb.classList.remove('open'); items[cur].focus(); };
+  document.getElementById('lbClose').onclick = close;
+  document.getElementById('lbPrev').onclick = () => show(cur - 1);
+  document.getElementById('lbNext').onclick = () => show(cur + 1);
+  lb.addEventListener('click', e => { if (e.target === lb) close(); });
+  document.addEventListener('keydown', e => {
+    if (!lb.classList.contains('open')) return;
+    if (e.key === 'Escape') close();
+    if (e.key === 'ArrowLeft') show(cur - 1);
+    if (e.key === 'ArrowRight') show(cur + 1);
+  });
+</script>
+</body>
+</html>
