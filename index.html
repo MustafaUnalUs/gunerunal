@@ -3,15 +3,15 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Güner Ünal · Saç Sanatçısı · Denizli</title>
-<meta name="description" content="Güner Ünal — 1983'ten bu yana saçla çalışan Denizli'li saç sanatçısı. Kişiye özel kesim, renk ve yıpranmış saç onarımı. Randevu: 0 258 265 70 66.">
-<meta name="theme-color" content="#0e0d0c">
+<title>Güner Ünal · Saç Sanatı &amp; Onarım · Denizli</title>
+<meta name="description" content="Güner Ünal — 1983'ten bu yana saçla çalışan Denizli'li saç sanatçısı. Kişiye özel kesim, renk ve yıpranmış saç onarımı. Yalnızca randevuyla: 0 258 265 70 66.">
+<meta name="theme-color" content="#0b0b0b">
 <link rel="canonical" href="https://gunerunal.com.tr/">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Güner Ünal · Saç Sanatçısı · Denizli">
+<meta property="og:title" content="Güner Ünal · Saç Sanatı & Onarım · Denizli">
 <meta property="og:description" content="1983'ten bu yana saçla çalışan bir usta. Kesim, renk ve onarım — yalnızca randevuyla.">
 <meta property="og:url" content="https://gunerunal.com.tr/">
-<meta property="og:image" content="https://gunerkuafor.com.tr/assets/cizgili-portre.webp">
+<meta property="og:image" content="https://gunerkuafor.com.tr/assets/guner-logo.jpg">
 <link rel="icon" href="https://gunerkuafor.com.tr/assets/guner-logo.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,10 +20,10 @@
 {
   "@context": "https://schema.org",
   "@type": "HairSalon",
-  "name": "Güner Ünal · Güner Kuaför",
+  "name": "Güner Kuaför · Güner Ünal",
+  "logo": "https://gunerkuafor.com.tr/assets/guner-logo.jpg",
   "founder": {"@type": "Person", "name": "Güner Ünal"},
   "url": "https://gunerunal.com.tr/",
-  "logo": "https://gunerkuafor.com.tr/assets/guner-logo.jpg",
   "image": "https://gunerkuafor.com.tr/assets/salondan.webp",
   "telephone": "+902582657066",
   "foundingDate": "2002",
@@ -32,183 +32,178 @@
 }
 </script>
 <style>
-  /* Görseller ve logo gunerkuafor.com.tr üzerinden geliyor. */
+  /* Siyah ve gümüş: Güner logosunun renkleri. Görseller gunerkuafor.com.tr üzerinden. */
   :root{
-    --white:#fbfaf8; --stone:#f1eee9; --ink:#0e0d0c; --soft:#5f5b55; --gold:#a8915f; --gold-l:#cbb68a;
-    --hair:rgba(14,13,12,.12);
+    --black:#0b0b0b; --coal:#131313; --graphite:#1b1b1b;
+    --silver:#b9b9b9; --platinum:#e4e2dd; --mute:#7d7b77;
+    --hair:rgba(228,226,221,.14);
     --serif:"Bodoni Moda", "Didot", Georgia, serif;
-    --sans:"Jost", system-ui, sans-serif;
+    --sans:"Jost", "Futura", system-ui, sans-serif;
   }
   *{box-sizing:border-box;margin:0;padding:0;min-width:0}
-  html{scroll-behavior:smooth;scroll-padding-top:90px}
-  body{background:var(--white);color:var(--ink);font:300 17px/1.75 var(--sans);-webkit-font-smoothing:antialiased;overflow-x:clip}
+  html{scroll-behavior:smooth}
+  body{background:var(--black);color:var(--platinum);font:300 17px/1.75 var(--sans);-webkit-font-smoothing:antialiased;overflow-x:clip}
   img{display:block;max-width:100%}
-  a{color:inherit}
-  .skip{position:absolute;left:-999px;top:0;background:var(--ink);color:#fff;padding:.6rem 1rem;z-index:100}
+  a{color:inherit;text-decoration:none}
+  .skip{position:absolute;left:-999px;top:0;background:var(--platinum);color:var(--black);padding:.6rem 1rem;z-index:100}
   .skip:focus{left:1rem}
-  .wrap{width:min(1240px,90vw);margin-inline:auto}
-  .cap{font:400 .72rem var(--sans);letter-spacing:.34em;text-transform:uppercase}
-  .gold{color:var(--gold)}
-  h2{font:400 clamp(2.4rem,4.6vw,4rem)/1.08 var(--serif);letter-spacing:-.01em}
-  h2 em{font-style:italic}
-  .rule{width:56px;height:1px;background:var(--gold);margin:1.6rem 0}
+  .wrap{width:min(1240px,88vw);margin-inline:auto}
+  .logo-img{mix-blend-mode:screen;filter:brightness(1.15) contrast(1.1)}
+  .cap{font:400 .72rem/1 var(--sans);letter-spacing:.38em;text-transform:uppercase;color:var(--silver)}
+  .serif{font-family:var(--serif);font-weight:400}
+  .rule{display:block;width:56px;height:1px;background:var(--silver);opacity:.6}
 
   /* ÜST */
-  .top{position:fixed;inset:0 0 auto;z-index:60;transition:background .5s,box-shadow .5s;color:#fff}
-  .top.solid{background:rgba(251,250,248,.94);backdrop-filter:blur(12px);color:var(--ink);box-shadow:0 1px 0 var(--hair)}
-  .top .wrap{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;height:88px}
-  .top nav{display:flex;gap:2rem}
-  .top nav a,.top .call{text-decoration:none;font:400 .72rem var(--sans);letter-spacing:.28em;text-transform:uppercase;opacity:.85}
-  .top nav a:hover,.top .call:hover{opacity:1}
-  .top .call{justify-self:end}
-  .crest{display:block;width:58px;height:58px;border-radius:50%;overflow:hidden;background:#fff;box-shadow:0 0 0 1px rgba(255,255,255,.4)}
-  .top.solid .crest{box-shadow:0 0 0 1px var(--gold-l)}
-  .crest img{width:100%;height:100%;object-fit:contain}
-  .burger{display:none;background:none;border:0;color:inherit;font:400 .72rem var(--sans);letter-spacing:.28em;cursor:pointer;justify-self:start;padding:.8rem 0}
+  .nav{position:fixed;inset:0 0 auto;z-index:60;transition:background .6s,border-color .6s;border-bottom:1px solid transparent}
+  .nav.solid{background:rgba(11,11,11,.92);backdrop-filter:blur(12px);border-color:var(--hair)}
+  .nav .wrap{display:flex;align-items:center;justify-content:space-between;height:88px;transition:height .5s}
+  .nav.solid .wrap{height:70px}
+  .nav .brand img{height:38px;width:auto;transition:height .5s}
+  .nav.solid .brand img{height:30px}
+  .nav ul{display:flex;gap:2.6rem;list-style:none;align-items:center}
+  .nav ul a{font-size:.74rem;letter-spacing:.3em;text-transform:uppercase;color:var(--silver);transition:color .3s}
+  .nav ul a:hover{color:var(--platinum)}
+  .nav .book{color:var(--platinum);border-bottom:1px solid var(--silver);padding-bottom:4px}
+  .burger{display:none;background:none;border:0;color:var(--platinum);font:400 .74rem var(--sans);letter-spacing:.3em;cursor:pointer;padding:.8rem 0}
 
-  /* HERO */
-  .hero{position:relative;height:100svh;min-height:640px;color:#fff;display:grid;place-items:center;text-align:center;overflow:hidden}
-  .hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 30%;animation:drift 22s ease-out forwards}
-  .hero::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(14,13,12,.55) 0%,rgba(14,13,12,.25) 40%,rgba(14,13,12,.7) 100%);z-index:1}
-  .hero-in{position:relative;z-index:2;padding:0 6vw}
-  .hero-logo{width:clamp(110px,12vw,150px);aspect-ratio:1;border-radius:50%;overflow:hidden;background:#fff;margin:0 auto 2.2rem;box-shadow:0 0 0 1px rgba(203,182,138,.8),0 0 0 9px rgba(255,255,255,.08)}
-  .hero-logo img{width:100%;height:100%;object-fit:contain}
-  .hero h1{font:400 clamp(3rem,8vw,7.4rem)/1 var(--serif);letter-spacing:-.015em}
-  .hero h1 em{font-style:italic;color:var(--gold-l)}
-  .hero .cap{margin-top:1.8rem;opacity:.9}
-  .hero-cta{display:inline-block;margin-top:2.6rem;border:1px solid rgba(255,255,255,.7);padding:1.05rem 2.4rem;text-decoration:none;transition:background .3s,color .3s}
-  .hero-cta:hover{background:#fff;color:var(--ink)}
-  .scroll-cue{position:absolute;bottom:2rem;left:50%;transform:translateX(-50%);z-index:2;width:1px;height:56px;background:linear-gradient(#fff,transparent)}
-  @keyframes drift{from{transform:scale(1.1)}to{transform:scale(1)}}
+  /* GİRİŞ */
+  .hero{position:relative;height:100svh;min-height:640px;overflow:hidden;display:grid;place-items:center;text-align:center}
+  .hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 30%;animation:breathe 22s ease-out forwards}
+  .hero::before{content:"";position:absolute;inset:0;z-index:1;background:
+      radial-gradient(ellipse at center,rgba(11,11,11,.35) 0%,rgba(11,11,11,.78) 70%),
+      linear-gradient(180deg,rgba(11,11,11,.55) 0%,rgba(11,11,11,0) 30%,rgba(11,11,11,0) 60%,var(--black) 100%)}
+  .hero-in{position:relative;z-index:2;display:flex;flex-direction:column;align-items:center;gap:2rem;padding:0 6vw}
+  .hero-in .logo-img{width:min(520px,72vw);opacity:0;animation:fade 2.2s .3s ease forwards}
+  .hero-in .cap{opacity:0;animation:fade 1.8s 1s ease forwards}
+  .hero h1{font-family:var(--serif);font-style:italic;font-weight:400;font-size:clamp(1.6rem,3vw,2.4rem);color:var(--platinum);opacity:0;animation:fade 1.8s 1.4s ease forwards}
+  .scroll{position:absolute;bottom:2.4rem;left:50%;transform:translateX(-50%);z-index:2;display:flex;flex-direction:column;align-items:center;gap:.9rem}
+  .scroll i{display:block;width:1px;height:54px;background:linear-gradient(var(--silver),transparent);animation:drip 2.6s ease-in-out infinite}
+  @keyframes breathe{from{transform:scale(1.12)}to{transform:scale(1.02)}}
+  @keyframes fade{to{opacity:1}}
+  @keyframes drip{0%{transform:scaleY(0);transform-origin:top}50%{transform:scaleY(1);transform-origin:top}51%{transform-origin:bottom}100%{transform:scaleY(0);transform-origin:bottom}}
 
-  section{padding-block:clamp(5rem,11vw,10rem)}
+  section{padding:clamp(6rem,12vw,11rem) 0}
 
-  /* GİRİŞ / MANİFESTO */
-  .intro{text-align:center}
-  .intro p.lead{font:400 clamp(1.6rem,3vw,2.5rem)/1.4 var(--serif);max-width:52rem;margin:2rem auto 0}
-  .intro p.lead em{font-style:italic;color:var(--gold)}
-  .stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));max-width:860px;margin:clamp(3.5rem,6vw,5rem) auto 0;border-top:1px solid var(--hair);border-bottom:1px solid var(--hair)}
-  .stats div{padding:2rem 1rem}
-  .stats div+div{border-left:1px solid var(--hair)}
-  .stats b{display:block;font:400 clamp(2.2rem,4vw,3.2rem)/1 var(--serif)}
-  .stats span{display:block;margin-top:.7rem;color:var(--soft)}
+  /* BEYAN */
+  .statement{text-align:center}
+  .statement .cap{display:block;margin-bottom:2.6rem}
+  .statement p.serif{font-size:clamp(1.9rem,3.8vw,3.3rem);line-height:1.28;max-width:62rem;margin-inline:auto;color:var(--platinum)}
+  .statement p.serif em{color:var(--silver)}
+  .figures{display:flex;justify-content:center;gap:clamp(2.5rem,8vw,7rem);margin-top:clamp(3.5rem,6vw,5rem)}
+  .figures div{display:flex;flex-direction:column;align-items:center;gap:.7rem}
+  .figures b{font-family:var(--serif);font-weight:400;font-size:clamp(2.6rem,4.5vw,3.8rem);line-height:1}
+  .figures span{font-size:.72rem;letter-spacing:.3em;text-transform:uppercase;color:var(--mute)}
 
   /* YAKLAŞIM */
-  .approach{background:var(--stone)}
-  .approach-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.25fr);gap:clamp(3rem,7vw,7rem);align-items:center}
-  .approach-img{position:relative}
-  .approach-img img{width:100%;aspect-ratio:4/5;object-fit:cover}
-  .approach-img::after{content:"";position:absolute;inset:18px -18px -18px 18px;border:1px solid var(--gold);z-index:-1}
-  .steps{list-style:none;margin-top:2.4rem}
-  .steps li{display:grid;grid-template-columns:3.2rem 1fr;gap:1rem;padding:1.6rem 0;border-top:1px solid var(--hair)}
-  .steps li:last-child{border-bottom:1px solid var(--hair)}
-  .steps i{font:italic 400 1.4rem var(--serif);color:var(--gold)}
-  .steps h3{font:400 1.55rem/1.2 var(--serif);margin-bottom:.35rem}
-  .steps p{color:var(--soft)}
+  .approach{background:var(--coal)}
+  .head{display:flex;flex-direction:column;gap:1.4rem;margin-bottom:clamp(3.5rem,6vw,5.5rem)}
+  .head h2{font-family:var(--serif);font-weight:400;font-size:clamp(2.6rem,5.2vw,4.6rem);line-height:1.05}
+  .head h2 em{color:var(--silver)}
+  .three{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-top:1px solid var(--hair)}
+  .three article{padding:3rem 3rem 0 0}
+  .three article+article{padding-left:3rem;border-left:1px solid var(--hair)}
+  .three .rn{font-family:var(--serif);font-style:italic;font-size:1.3rem;color:var(--silver)}
+  .three h3{font-family:var(--serif);font-weight:400;font-size:1.9rem;margin:1.1rem 0 .9rem}
+  .three p{color:#b3b0aa}
 
-  /* USTA */
-  .master{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:clamp(3rem,7vw,7rem);align-items:center}
-  .master-text p{color:var(--soft);margin-top:1.2rem;max-width:33rem}
-  .master-text blockquote{font:italic 400 1.5rem/1.45 var(--serif);margin-top:2.2rem;padding-left:1.4rem;border-left:1px solid var(--gold);max-width:30rem}
-  .master-photos{position:relative;padding:0 0 22% 0}
-  .master-photos .m1{width:78%;aspect-ratio:4/5;object-fit:cover;margin-left:auto}
-  .master-photos .m2{position:absolute;left:0;bottom:0;width:44%;aspect-ratio:3/4;object-fit:cover;filter:grayscale(1) contrast(1.05);border:10px solid var(--white)}
-  .master-photos small{position:absolute;left:46%;bottom:.4rem;color:var(--soft)}
+  /* PORTRE */
+  .portrait{padding:0;display:grid;grid-template-columns:1fr 1fr;min-height:100svh}
+  .portrait-img{position:relative;overflow:hidden}
+  .portrait-img img{width:100%;height:100%;object-fit:cover}
+  .portrait-text{background:var(--graphite);display:flex;flex-direction:column;justify-content:center;padding:clamp(4rem,8vw,8rem) clamp(2rem,6vw,7rem)}
+  .portrait-text h2{font-family:var(--serif);font-weight:400;font-size:clamp(2.6rem,4.6vw,4.2rem);line-height:1.05;margin:1.6rem 0 2rem}
+  .portrait-text p{color:#bdbab4;max-width:32rem;margin-bottom:1.2rem}
+  .archive{display:flex;align-items:center;gap:1.6rem;margin-top:2.6rem;padding-top:2.2rem;border-top:1px solid var(--hair)}
+  .archive img{width:96px;aspect-ratio:3/4;object-fit:cover;filter:grayscale(1) contrast(1.05)}
+  .archive b{display:block;font-family:var(--serif);font-weight:400;font-size:2.4rem;line-height:1}
+  .archive span{font-size:.85rem;color:var(--mute)}
+  .sign{font-family:var(--serif);font-style:italic;font-size:1.6rem;color:var(--silver);margin-top:1.4rem}
 
   /* HİZMETLER */
-  .services{background:var(--ink);color:#f3efe8}
-  .services h2{color:#fff}
-  .svc-head{display:flex;justify-content:space-between;align-items:end;gap:2rem;flex-wrap:wrap;margin-bottom:clamp(3rem,6vw,5rem)}
-  .svc-head p{max-width:26rem;color:#b9b2a6}
-  .svc{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(1.5rem,3vw,3rem)}
-  .svc article{position:relative}
-  .svc .ph{overflow:hidden}
-  .svc img{width:100%;aspect-ratio:5/6;object-fit:cover;transition:transform 1.6s cubic-bezier(.2,.7,.2,1)}
-  .svc article:hover img{transform:scale(1.045)}
-  .svc h3{font:400 clamp(2rem,3.4vw,2.8rem)/1.1 var(--serif);margin-top:1.8rem;color:#fff}
-  .svc h3 em{font-style:italic;color:var(--gold-l)}
-  .svc p{color:#b9b2a6;margin-top:.8rem;max-width:30rem}
-  .svc ul{list-style:none;margin-top:1.4rem;border-top:1px solid rgba(255,255,255,.14)}
-  .svc li{display:flex;justify-content:space-between;padding:.8rem 0;border-bottom:1px solid rgba(255,255,255,.14);font-size:.98rem}
-  .svc li span{color:var(--gold-l);font-size:.72rem;letter-spacing:.28em;text-transform:uppercase;align-self:center}
+  .svc{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:clamp(1.5rem,3vw,3rem);align-items:center}
+  .svc+.svc{margin-top:clamp(5rem,10vw,9rem)}
+  .svc figure{grid-column:1/8;overflow:hidden}
+  .svc figure img{width:100%;aspect-ratio:4/5;object-fit:cover;transition:transform 2.4s cubic-bezier(.2,.7,.2,1)}
+  .svc:hover figure img{transform:scale(1.04)}
+  .svc .txt{grid-column:9/13}
+  .svc.flip figure{grid-column:6/13;grid-row:1}
+  .svc.flip .txt{grid-column:1/5;grid-row:1}
+  .svc h3{font-family:var(--serif);font-weight:400;font-size:clamp(2.6rem,4.6vw,4rem);line-height:1;margin:1.2rem 0 1.4rem}
+  .svc h3 em{color:var(--silver)}
+  .svc p{color:#b3b0aa}
+  .svc ul{list-style:none;margin-top:2rem;border-top:1px solid var(--hair)}
+  .svc li{padding:.9rem 0;border-bottom:1px solid var(--hair);font-size:.95rem;letter-spacing:.06em;display:flex;justify-content:space-between}
+  .svc li::after{content:"—";color:var(--mute)}
 
   /* ÇALIŞMALAR */
-  .works-head{text-align:center;margin-bottom:clamp(3rem,6vw,4.5rem)}
-  .works-head .rule{margin-inline:auto}
-  .grid{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:14px}
-  .grid button{all:unset;cursor:zoom-in;position:relative;overflow:hidden;display:block}
-  .grid button:focus-visible{outline:1px solid var(--gold);outline-offset:4px}
-  .grid img{width:100%;height:100%;object-fit:cover;transition:transform 1.4s cubic-bezier(.2,.7,.2,1)}
-  .grid button:hover img{transform:scale(1.05)}
-  .grid .t{position:absolute;inset:auto 0 0 0;padding:1.2rem;background:linear-gradient(transparent,rgba(14,13,12,.6));color:#fff;font:italic 400 1.1rem var(--serif);opacity:0;transition:opacity .4s}
-  .grid button:hover .t,.grid button:focus-visible .t{opacity:1}
-  .g1{grid-column:span 5;grid-row:span 2;aspect-ratio:auto}
-  .g2,.g3{grid-column:span 7}
-  .g4,.g5,.g6{grid-column:span 4}
-  .g2 img,.g3 img{aspect-ratio:16/10}
-  .g4 img,.g5 img,.g6 img{aspect-ratio:4/5}
-  .g1 img{position:absolute;inset:0}
-  .works-foot{text-align:center;margin-top:3rem}
-  .link{text-decoration:none;border-bottom:1px solid var(--gold);padding-bottom:3px}
-  .link:hover{color:var(--gold)}
+  .works{background:var(--coal)}
+  .works .head{flex-direction:row;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:1.4rem}
+  .works .head>div{display:flex;flex-direction:column;gap:1.4rem}
+  .grid{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));grid-auto-rows:clamp(150px,17vw,230px);gap:10px}
+  .grid button{all:unset;position:relative;overflow:hidden;cursor:zoom-in;display:block}
+  .grid button:focus-visible{outline:1px solid var(--platinum);outline-offset:4px}
+  .grid img{width:100%;height:100%;object-fit:cover;filter:saturate(.85) brightness(.9);transition:transform 1.6s cubic-bezier(.2,.7,.2,1),filter .8s}
+  .grid button:hover img{transform:scale(1.05);filter:none}
+  .grid figcaption{position:absolute;left:1.1rem;bottom:1rem;font-size:.68rem;letter-spacing:.3em;text-transform:uppercase;opacity:0;transform:translateY(6px);transition:.5s}
+  .grid button:hover figcaption,.grid button:focus-visible figcaption{opacity:1;transform:none}
+  .g1{grid-column:1/3;grid-row:span 3}.g2{grid-column:3/5;grid-row:span 2}.g3{grid-column:5/7;grid-row:span 2}
+  .g4{grid-column:3/4;grid-row:span 2}.g5{grid-column:4/5;grid-row:span 2}.g6{grid-column:5/7;grid-row:span 2}
+  .g7{grid-column:1/3;grid-row:span 1}.g8{grid-column:1/7;grid-row:span 2}
+  .link{display:inline-flex;gap:.8rem;align-items:center;font-size:.74rem;letter-spacing:.3em;text-transform:uppercase;border-bottom:1px solid var(--silver);padding-bottom:6px;color:var(--platinum);transition:gap .3s}
+  .link:hover{gap:1.3rem}
 
-  .lb{position:fixed;inset:0;background:rgba(14,13,12,.96);display:none;align-items:center;justify-content:center;z-index:200;padding:5vh 5vw}
+  .lb{position:fixed;inset:0;z-index:200;background:rgba(8,8,8,.97);display:none;align-items:center;justify-content:center;padding:6vh 6vw}
   .lb.open{display:flex}
-  .lb img{max-height:82vh;object-fit:contain}
-  .lb p{position:absolute;bottom:3vh;left:0;right:0;text-align:center;color:#cfc7ba;font:italic 400 1.1rem var(--serif)}
-  .lb button{position:absolute;background:none;border:0;color:#fff;font:300 2.4rem var(--sans);cursor:pointer;padding:1rem;width:64px;height:64px}
-  .lb .x{top:1rem;right:1rem}.lb .pv{left:1rem;top:50%;transform:translateY(-50%)}.lb .nx{right:1rem;top:50%;transform:translateY(-50%)}
+  .lb img{max-height:82vh;max-width:100%;object-fit:contain}
+  .lb p{position:absolute;bottom:3.5vh;left:0;right:0;text-align:center}
+  .lb button{position:absolute;background:none;border:0;color:var(--platinum);cursor:pointer;font:300 2rem var(--sans);padding:1rem;opacity:.7}
+  .lb button:hover{opacity:1}
+  .lb .x{top:1.2rem;right:1.6rem}.lb .pv{left:1rem;top:50%;transform:translateY(-50%)}.lb .nx{right:1rem;top:50%;transform:translateY(-50%)}
 
   /* RANDEVU */
-  .contact{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);min-height:680px;background:var(--stone)}
-  .contact>img{width:100%;height:100%;object-fit:cover}
-  .contact-in{padding:clamp(3.5rem,7vw,6.5rem) clamp(1.5rem,6vw,6rem);display:flex;flex-direction:column;justify-content:center}
-  .contact-in > p{color:var(--soft);max-width:28rem}
-  .tel{display:inline-block;font:400 clamp(2rem,3.6vw,3rem)/1.1 var(--serif);text-decoration:none;margin:2rem 0;white-space:nowrap}
-  .tel:hover{color:var(--gold)}
-  .btn{display:inline-block;background:var(--ink);color:#fff;text-decoration:none;padding:1.05rem 2.4rem;align-self:flex-start;transition:background .3s}
-  .btn:hover{background:var(--gold)}
-  .details{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:2rem;margin-top:3rem;padding-top:2rem;border-top:1px solid var(--hair)}
-  .details .cap{color:var(--gold);margin-bottom:.6rem}
-  .details a{text-decoration:none;border-bottom:1px solid var(--hair)}
-  .details a:hover{border-color:var(--gold)}
+  .book-sec{position:relative;padding:0;overflow:hidden}
+  .book-sec>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.28}
+  .book-sec::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,var(--black) 0%,rgba(11,11,11,.6) 40%,var(--black) 100%);z-index:1}
+  .book-in{position:relative;z-index:2;text-align:center;padding:clamp(7rem,14vw,12rem) 6vw;display:flex;flex-direction:column;align-items:center;gap:1.8rem}
+  .book-in .logo-img{width:min(240px,56vw)}
+  .book-in h2{font-family:var(--serif);font-weight:400;font-size:clamp(2.4rem,5vw,4.4rem);line-height:1.05}
+  .book-in h2 em{color:var(--silver)}
+  .book-in>p{color:#bdbab4;max-width:34rem}
+  .tel{font-family:var(--serif);font-size:clamp(2.2rem,5.4vw,4.6rem);letter-spacing:.02em;white-space:nowrap;line-height:1.1;padding:.6rem 0;border-bottom:1px solid var(--hair);transition:color .3s,border-color .3s}
+  .tel:hover{color:#fff;border-color:var(--silver)}
+  .details{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:3rem;margin-top:2.6rem;width:min(980px,100%);text-align:center}
+  .details .cap{display:block;margin-bottom:1rem;color:var(--mute)}
+  .details p{color:var(--platinum)}
+  .details a{border-bottom:1px solid var(--hair);transition:border-color .3s}
+  .details a:hover{border-color:var(--silver)}
 
-  footer{background:var(--ink);color:#8f887d;text-align:center;padding:4rem 0 2.4rem}
-  footer .crest{margin:0 auto 1.4rem;width:72px;height:72px}
-  footer .name{font:400 1.6rem var(--serif);color:#f3efe8}
-  footer .cap{margin-top:.6rem}
-  footer .row{display:flex;justify-content:center;gap:2rem;flex-wrap:wrap;margin-top:2.4rem;padding-top:1.6rem;border-top:1px solid rgba(255,255,255,.1);font-size:.88rem}
-  footer a{text-decoration:none}
-  footer a:hover{color:#fff}
+  footer{border-top:1px solid var(--hair);padding:2.6rem 0}
+  footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:1.5rem;flex-wrap:wrap;font-size:.8rem;color:var(--mute);letter-spacing:.06em}
+  footer img{height:24px;width:auto}
+  footer a:hover{color:var(--platinum)}
 
-  .rv{opacity:0;transform:translateY(30px);transition:opacity 1.2s ease,transform 1.2s cubic-bezier(.2,.7,.2,1)}
+  .rv{opacity:0;transform:translateY(30px);transition:opacity 1.4s cubic-bezier(.2,.7,.2,1),transform 1.4s cubic-bezier(.2,.7,.2,1)}
   .rv.in{opacity:1;transform:none}
 
   @media (max-width:960px){
-    .top .wrap{height:76px}
-    .top nav{display:none;position:absolute;top:76px;left:0;right:0;flex-direction:column;gap:0;background:var(--white);color:var(--ink);border-bottom:1px solid var(--hair)}
-    .top nav.open{display:flex}
-    .top nav a{padding:1.1rem 5vw;border-top:1px solid var(--hair)}
+    .nav ul{display:none;position:absolute;top:100%;left:0;right:0;flex-direction:column;gap:0;background:var(--black);border-bottom:1px solid var(--hair);padding:1rem 0}
+    .nav ul.open{display:flex}
+    .nav ul a{display:block;padding:1rem 6vw}
+    .nav .book{border:0}
     .burger{display:block}
-    .top .call{font-size:.65rem;letter-spacing:.2em}
-    .crest{width:50px;height:50px}
-    .approach-grid,.master,.svc,.contact{grid-template-columns:1fr}
-    .approach-img{margin-right:18px}
-    .master-photos{order:-1}
-    .contact>img{height:360px}
-    .grid{grid-template-columns:repeat(2,minmax(0,1fr))}
-    .g1,.g2,.g3,.g4,.g5,.g6{grid-column:span 1;grid-row:auto}
-    .g1 img{position:static;aspect-ratio:4/5}
-    .g2,.g3{grid-column:span 2}
-  }
-  @media (max-width:560px){
-    .stats{grid-template-columns:1fr}
-    .stats div+div{border-left:0;border-top:1px solid var(--hair)}
-    .details{grid-template-columns:1fr}
-    .top .call{display:none}
+    .three{grid-template-columns:1fr}
+    .three article,.three article+article{padding:2.4rem 0;border-left:0;border-bottom:1px solid var(--hair)}
+    .portrait{grid-template-columns:1fr;min-height:0}
+    .portrait-img{height:78svh}
+    .svc figure,.svc.flip figure,.svc .txt,.svc.flip .txt{grid-column:1/-1;grid-row:auto}
+    .grid{grid-template-columns:repeat(2,minmax(0,1fr));grid-auto-rows:clamp(150px,42vw,260px)}
+    .grid button{grid-column:auto !important;grid-row:span 1 !important}
+    .g1,.g8{grid-column:1/-1 !important;grid-row:span 2 !important}
+    .details{grid-template-columns:1fr;gap:2.2rem}
   }
   @media (prefers-reduced-motion:reduce){
     *{animation:none !important;transition:none !important}
+    .hero-in .logo-img,.hero-in .cap,.hero h1{opacity:1}
     .rv{opacity:1;transform:none}
   }
 </style>
@@ -216,125 +211,115 @@
 <body>
 <a class="skip" href="#icerik">İçeriğe geç</a>
 
-<header class="top" id="top-bar">
+<header class="nav" id="nav">
   <div class="wrap">
-    <button class="burger" id="burger" aria-expanded="false" aria-controls="menu">MENÜ</button>
-    <nav id="menu">
-      <a href="#yaklasim">Yaklaşım</a>
-      <a href="#usta">Güner Ünal</a>
-      <a href="#hizmetler">Hizmetler</a>
-      <a href="#calismalar">Çalışmalar</a>
-    </nav>
-    <a class="crest" href="#basla" aria-label="Güner Kuaför — başa dön"><img src="https://gunerkuafor.com.tr/assets/guner-logo.jpg" alt="Güner Kuaför logosu"></a>
-    <a class="call" href="#randevu">Randevu</a>
+    <a class="brand" href="#top" aria-label="Güner — başa dön"><img class="logo-img" src="https://gunerkuafor.com.tr/assets/guner-logo.jpg" alt="Güner" width="89" height="38"></a>
+    <button class="burger" id="burger" aria-expanded="false" aria-controls="menu">Menü</button>
+    <ul id="menu">
+      <li><a href="#yaklasim">Yaklaşım</a></li>
+      <li><a href="#guner-unal">Güner Ünal</a></li>
+      <li><a href="#hizmetler">Hizmetler</a></li>
+      <li><a href="#calismalar">Çalışmalar</a></li>
+      <li><a class="book" href="#randevu">Randevu</a></li>
+    </ul>
   </div>
 </header>
 
 <main id="icerik">
-  <section class="hero" id="basla" style="padding:0">
-    <img src="https://gunerkuafor.com.tr/assets/acilis-duzenlenmis.webp" alt="Salonda uzun, koyu ve dalgalı saçlı bir müşteri portresi" fetchpriority="high">
+  <section class="hero" id="top">
+    <img src="https://gunerkuafor.com.tr/assets/acilis-duzenlenmis.webp" alt="" fetchpriority="high">
     <div class="hero-in">
-      <div class="hero-logo"><img src="https://gunerkuafor.com.tr/assets/guner-logo.jpg" alt="Güner Kuaför logosu"></div>
-      <h1>Her saç <em>aynı</em><br>değildir.</h1>
-      <div class="cap">Güner Ünal · Saç Sanatı &amp; Onarım · Denizli</div>
-      <a class="hero-cta cap" href="#randevu">Randevu Oluşturun</a>
+      <img class="logo-img" src="https://gunerkuafor.com.tr/assets/guner-logo.jpg" alt="Güner" width="933" height="396">
+      <span class="cap">Saç Sanatı &amp; Onarım · Denizli · Since 1983</span>
+      <h1>Her saç aynı değildir.</h1>
     </div>
-    <span class="scroll-cue" aria-hidden="true"></span>
+    <a class="scroll" href="#beyan" aria-label="Aşağı kaydır"><span class="cap">Keşfet</span><i></i></a>
   </section>
 
-  <section class="intro">
+  <section class="statement" id="beyan">
     <div class="wrap rv">
-      <div class="cap gold">Since 1983</div>
-      <p class="lead">Kırk yılı aşkın bir el emeği. Her saçı <em>kendi hikâyesiyle</em> dinleyen, kesimi, rengi ve onarımı yalnızca size göre kuran bir salon.</p>
-      <div class="stats">
-        <div><b>1983</b><span>Mesleğe ilk adım</span></div>
-        <div><b>2002</b><span>Kendi salonu, Denizli</span></div>
+      <span class="cap">Güner Ünal</span>
+      <p class="serif">Kırk yılı aşkın süredir aynı inançla çalışıyoruz: <em>önce saçı dinlemek.</em> Geçmişini, sınırlarını, size neler söylediğini. Kesim, renk ve onarım ancak ondan sonra başlar.</p>
+      <div class="figures">
+        <div><b>1983</b><span>İlk makas</span></div>
+        <div><b>2002</b><span>Kendi salonu</span></div>
         <div><b>40+</b><span>Yıllık deneyim</span></div>
       </div>
     </div>
   </section>
 
   <section class="approach" id="yaklasim">
-    <div class="wrap approach-grid">
-      <div class="approach-img rv"><img src="https://gunerkuafor.com.tr/assets/salondan.webp" alt="Salonun gün ışığı alan çalışma alanı ve aynaları" loading="lazy"></div>
-      <div class="rv">
-        <div class="cap gold">Yaklaşım</div>
-        <h2>Önce dinler,<br><em>sonra</em> dokunuruz.</h2>
-        <ol class="steps">
-          <li><i>i.</i><div><h3>Beklenti</h3><p>Nasıl görünmek istediğinizi, günlük hayatınızı ve saçınıza ne kadar zaman ayırdığınızı konuşarak başlarız.</p></div></li>
-          <li><i>ii.</i><div><h3>Saçın geçmişi</h3><p>Boyalar, işlemler, yıpranma… Saçın yaşadıklarını inceler, neyin mümkün olduğunu açıkça söyleriz.</p></div></li>
-          <li><i>iii.</i><div><h3>Ortak karar</h3><p>Sınırları ve olasılıkları bilerek size en uygun yolu birlikte seçeriz. Sürpriz yok, net bir plan var.</p></div></li>
-        </ol>
-      </div>
-    </div>
-  </section>
-
-  <section id="usta">
-    <div class="wrap master">
-      <div class="master-text rv">
-        <div class="cap gold">Güner Ünal</div>
-        <h2>Bir ömür,<br><em>tek bir</em> zanaat.</h2>
-        <div class="rule"></div>
-        <p>Güner Ünal mesleğe 1983'te adım attı. Teknikler, ürünler ve modalar değişti; o her değişimi eğitimlerle takip etti, öğrendiğini atölyedeki deneyimiyle harmanladı.</p>
-        <p>2002'de Denizli'de kendi salonunu açtı. Bugün aynı özenle, müşterilerinin saçını yıllardır emanet aldığı bu salonda, yalnızca randevuyla çalışıyor.</p>
-      </div>
-      <figure class="master-photos rv">
-        <img class="m1" src="https://gunerkuafor.com.tr/assets/cizgili-portre.webp" alt="Güner Ünal portresi, Denizli" loading="lazy">
-        <img class="m2" src="https://gunerkuafor.com.tr/assets/guner-1983.webp" alt="Güner Ünal'ın mesleğe başladığı yıllardan siyah-beyaz portre" loading="lazy">
-        <small class="cap">1983</small>
-      </figure>
-    </div>
-  </section>
-
-  <section class="services" id="hizmetler">
     <div class="wrap">
-      <div class="svc-head rv">
-        <div><div class="cap gold">Hizmetler</div><h2 style="margin-top:1rem">Saç sanatı<br>&amp; <em>onarım</em></h2></div>
-        <p>Her çalışma bir görüşmeyle başlar. Süre ve yöntem, saçınızın ihtiyacına göre birlikte belirlenir.</p>
+      <div class="head rv"><span class="cap">Yaklaşım</span><h2>Her çalışma bir<br><em>sohbetle</em> başlar.</h2></div>
+      <div class="three">
+        <article class="rv"><span class="rn">I.</span><h3>Dinlemek</h3><p>Nasıl görünmek istediğinizi, günlük hayatınızı ve saçınıza ne kadar zaman ayırdığınızı konuşarak başlarız.</p></article>
+        <article class="rv"><span class="rn">II.</span><h3>Değerlendirmek</h3><p>Boyalar, işlemler, yıpranma… Saçın bugüne kadar yaşadıklarını inceler, neyin gerçekten mümkün olduğunu açıkça söyleriz.</p></article>
+        <article class="rv"><span class="rn">III.</span><h3>Birlikte karar</h3><p>Sınırları ve olasılıkları bilerek size en uygun yolu birlikte seçeriz. Sürpriz yok; net bir plan var.</p></article>
       </div>
-      <div class="svc">
-        <article class="rv">
-          <div class="ph"><img src="https://gunerkuafor.com.tr/assets/sari-dalga.webp" alt="Uzun, dalgalı saç çalışması" loading="lazy"></div>
-          <h3>Saç <em>Sanatı</em></h3>
-          <p>Kesim ve renk, yüzünüzle ve ifadenizle uyum içinde olmalı. Her çalışma, sizin için tasarlanan tek bir sonuç.</p>
-          <ul><li>Kişiye özel kesim<span>Kesim</span></li><li>Renk ve ton çalışmaları<span>Renk</span></li><li>Gelin ve özel gün saçı<span>Özel gün</span></li></ul>
-        </article>
-        <article class="rv">
-          <div class="ph"><img src="https://gunerkuafor.com.tr/assets/uzun-bakir.webp" alt="Uzun bakır saçta arkadan dalgalı görünüm" loading="lazy"></div>
+    </div>
+  </section>
+
+  <section class="portrait" id="guner-unal">
+    <div class="portrait-img"><img src="https://gunerkuafor.com.tr/assets/cizgili-portre.webp" alt="Güner Ünal portresi, Denizli" loading="lazy"></div>
+    <div class="portrait-text rv">
+      <span class="cap">Usta</span>
+      <h2>Kırk yılı aşan<br>bir el emeği.</h2>
+      <p>Güner Ünal mesleğe 1983'te adım attı. Teknikler, ürünler ve modalar değişti; o her değişimi eğitimlerle takip etti, öğrendiklerini atölyedeki deneyimiyle harmanladı.</p>
+      <p>2002'de Denizli'de kendi salonunu açtı. Bugün aynı özenle, müşterilerinin saçını yıllardır emanet aldığı bu salonda çalışıyor.</p>
+      <div class="archive">
+        <img src="https://gunerkuafor.com.tr/assets/guner-1983.webp" alt="Güner Ünal'ın mesleğe başladığı yıllardan siyah-beyaz portre" loading="lazy">
+        <div><b>1983</b><span>Mesleğin ilk yılları</span></div>
+      </div>
+      <p class="sign">Güner Ünal</p>
+    </div>
+  </section>
+
+  <section id="hizmetler">
+    <div class="wrap">
+      <div class="head rv"><span class="cap">Hizmetler</span><h2>Saç sanatı<br><em>&amp; onarım</em></h2></div>
+      <div class="svc rv">
+        <figure><img src="https://gunerkuafor.com.tr/assets/sari-dalga.webp" alt="Uzun, dalgalı saç çalışması" loading="lazy"></figure>
+        <div class="txt">
+          <span class="rule"></span>
+          <h3>Saç <em>sanatı</em></h3>
+          <p>Kesim ve renk, yüzünüzle ve ifadenizle uyum içinde olmalı. Her çalışma, yalnızca sizin için tasarlanan tek bir sonuçtur.</p>
+          <ul><li>Kişiye özel kesim</li><li>Renk</li><li>Şekillendirme</li><li>Gelin &amp; özel gün</li></ul>
+        </div>
+      </div>
+      <div class="svc flip rv">
+        <figure><img src="https://gunerkuafor.com.tr/assets/uzun-bakir.webp" alt="Uzun bakır saçta arkadan dalgalı görünüm" loading="lazy"></figure>
+        <div class="txt">
+          <span class="rule"></span>
           <h3><em>Onarım</em></h3>
-          <p>Yıpranmış, yanlış işlem görmüş saçı adım adım toparlarız: biçimini, dengesini ve canlılığını geri kazandırırız.</p>
-          <ul><li>Yıpranma değerlendirmesi<span>Analiz</span></li><li>Onarıcı bakım<span>Bakım</span></li><li>Renk düzeltme<span>Düzeltme</span></li></ul>
-        </article>
+          <p>Yıpranmış, yanlış işlem görmüş saçı adım adım toparlarız: biçimini, dengesini ve canlılığını yeniden kazandırırız.</p>
+          <ul><li>Yıpranma analizi</li><li>Onarıcı bakım</li><li>Renk düzeltme</li></ul>
+        </div>
       </div>
     </div>
   </section>
 
-  <section id="calismalar">
+  <section class="works" id="calismalar">
     <div class="wrap">
-      <div class="works-head rv">
-        <div class="cap gold">Çalışmalar</div>
-        <h2 style="margin-top:1rem">Salondan <em>seçkiler</em></h2>
-        <div class="rule"></div>
+      <div class="head rv">
+        <div><span class="cap">Çalışmalar</span><h2>Salondan<br><em>seçkiler</em></h2></div>
+        <a class="link" href="https://www.instagram.com/gunerkuafor" target="_blank" rel="noopener">Instagram'da devamı <span aria-hidden="true">→</span></a>
       </div>
       <div class="grid rv" id="grid"></div>
-      <div class="works-foot"><a class="link cap" href="https://www.instagram.com/gunerkuafor" target="_blank" rel="noopener">Instagram · @gunerkuafor</a></div>
     </div>
   </section>
 
-  <section class="contact" id="randevu" style="padding:0">
-    <img src="https://gunerkuafor.com.tr/assets/salon-giris.webp" alt="Salonun bahçesindeki tabela ve giriş yolu" loading="lazy">
-    <div class="contact-in rv">
-      <div class="cap gold">Randevu</div>
-      <h2 style="margin-top:1rem">Size ayrılmış<br><em>bir zaman.</em></h2>
-      <div class="rule"></div>
-      <p>Her misafire acele etmeden zaman ayırabilmek için yalnızca randevuyla çalışıyoruz. Bir telefonla yerinizi ayırtabilirsiniz.</p>
+  <section class="book-sec" id="randevu">
+    <img src="https://gunerkuafor.com.tr/assets/salon-giris.webp" alt="" loading="lazy">
+    <div class="book-in rv">
+      <img class="logo-img" src="https://gunerkuafor.com.tr/assets/guner-logo.jpg" alt="Güner" loading="lazy" width="933" height="396">
+      <span class="cap">Randevu</span>
+      <h2>Size ayrılmış<br><em>bir zaman.</em></h2>
+      <p>Her misafirimize acele etmeden zaman ayırabilmek için yalnızca randevuyla çalışıyoruz.</p>
       <a class="tel" href="tel:+902582657066">0 258 265 70 66</a>
-      <a class="btn cap" href="tel:+902582657066">Hemen Arayın</a>
       <div class="details">
-        <div><div class="cap">Adres</div><p>Mehmetçik Mahallesi, 2585. Sokak No:1<br>Pamukkale / Denizli</p>
-          <p style="margin-top:.5rem"><a href="https://www.google.com/maps/search/?api=1&query=Mehmet%C3%A7ik+Mahallesi+2585.+Sokak+No%3A1+Pamukkale+Denizli" target="_blank" rel="noopener">Yol tarifi al</a></p></div>
-        <div><div class="cap">Takip edin</div><p><a href="https://www.instagram.com/gunerkuafor" target="_blank" rel="noopener">Instagram</a> &nbsp;·&nbsp; <a href="https://www.facebook.com/gunerkuafor" target="_blank" rel="noopener">Facebook</a></p>
-          <p style="margin-top:.5rem"><a href="https://gunerkuafor.com.tr" target="_blank" rel="noopener">gunerkuafor.com.tr</a></p></div>
+        <div><span class="cap">Adres</span><p>Mehmetçik Mah. 2585. Sk. No:1<br>Pamukkale / Denizli</p><p style="margin-top:.6rem"><a href="https://www.google.com/maps/search/?api=1&query=Mehmet%C3%A7ik+Mahallesi+2585.+Sokak+No%3A1+Pamukkale+Denizli" target="_blank" rel="noopener">Yol tarifi</a></p></div>
+        <div><span class="cap">Çalışma şekli</span><p>Yalnızca randevuyla<br>Telefonla yer ayırtın</p></div>
+        <div><span class="cap">Takip edin</span><p><a href="https://www.instagram.com/gunerkuafor" target="_blank" rel="noopener">Instagram</a> · <a href="https://www.facebook.com/gunerkuafor" target="_blank" rel="noopener">Facebook</a></p><p style="margin-top:.6rem"><a href="https://gunerkuafor.com.tr" target="_blank" rel="noopener">gunerkuafor.com.tr</a></p></div>
       </div>
     </div>
   </section>
@@ -342,10 +327,9 @@
 
 <footer>
   <div class="wrap">
-    <a class="crest" href="#basla" aria-label="Başa dön"><img src="https://gunerkuafor.com.tr/assets/guner-logo.jpg" alt="Güner Kuaför logosu"></a>
-    <div class="name">Güner Ünal</div>
-    <div class="cap">Saç Sanatı &amp; Onarım · Denizli</div>
-    <div class="row"><span>© <span id="yr">2026</span> Güner Ünal</span><a href="tel:+902582657066">0 258 265 70 66</a><a href="#basla">Başa dön ↑</a></div>
+    <img class="logo-img" src="https://gunerkuafor.com.tr/assets/guner-logo.jpg" alt="Güner" loading="lazy" width="57" height="24">
+    <span>© <span id="yr">2026</span> Güner Ünal · Saç Sanatı &amp; Onarım · Denizli</span>
+    <a href="#top">Başa dön ↑</a>
   </div>
 </footer>
 
@@ -354,46 +338,52 @@
   <button class="pv" id="lbP" aria-label="Önceki">‹</button>
   <img id="lbImg" alt="">
   <button class="nx" id="lbN" aria-label="Sonraki">›</button>
-  <p id="lbCap"></p>
+  <p class="cap" id="lbCap"></p>
 </div>
 
 <script>
 {
   const A = 'https://gunerkuafor.com.tr/assets/';
   const works = [
-    ['gelin.webp','Gelin','Uzun, dalgalı gelin saçı'],
+    ['gelin.webp','Gelin','Duvaklı gelin için uzun, dalgalı saç'],
     ['kut-kesim.webp','Küt kesim','Açık renk küt kesim, arkadan'],
-    ['sari-dalga.webp','Dalgalar','Uzun, dalgalı saç'],
+    ['uzun-bakir.webp','Bakır dalga','Uzun bakır saçta dalgalar'],
     ['kisa-sari.webp','Kısa kesim','Kısa, açık renk saç kesimi'],
     ['duz-kesim.webp','Düz kesim','Düz kesim çalışması'],
-    ['kisa-kivircik.webp','Kıvırcık','Kısa kıvırcık saçta açık tutamlar']
+    ['kisa-kivircik.webp','Kıvırcık','Kısa kıvırcık saçta açık tutamlar'],
+    ['sari-dalga.webp','Dalga','Uzun, dalgalı saç'],
+    ['salondan.webp','Salon','Salonun gün ışığı alan çalışma alanı']
   ];
   const grid = document.getElementById('grid');
-  grid.innerHTML = works.map((w,i)=>`<button class="g${i+1}" data-i="${i}" aria-label="${w[1]} — büyüt"><img src="${A+w[0]}" alt="${w[2]}" loading="lazy"><span class="t">${w[1]}</span></button>`).join('');
+  grid.innerHTML = works.map((w,i)=>`<button class="g${i+1}" data-i="${i}"><figure><img src="${A+w[0]}" alt="${w[2]}" loading="lazy"><figcaption>${w[1]}</figcaption></figure></button>`).join('');
+  grid.querySelectorAll('figure').forEach(f=>{f.style.cssText='margin:0;height:100%'});
 
-  const lb = document.getElementById('lb'), im = document.getElementById('lbImg'), cap = document.getElementById('lbCap');
+  const lb = document.getElementById('lb'), lbImg = document.getElementById('lbImg'), lbCap = document.getElementById('lbCap');
   const btns = [...grid.querySelectorAll('button')];
   let cur = 0;
-  const show = i => { cur = (i + works.length) % works.length; im.src = A + works[cur][0]; im.alt = works[cur][2]; cap.textContent = works[cur][1]; };
-  btns.forEach((b,i) => b.onclick = () => { show(i); lb.classList.add('open'); document.getElementById('lbX').focus(); });
+  const show = i => { cur = (i + works.length) % works.length; lbImg.src = A + works[cur][0]; lbImg.alt = works[cur][2]; lbCap.textContent = works[cur][1]; };
   const close = () => { lb.classList.remove('open'); btns[cur].focus(); };
+  btns.forEach((b,i)=>b.addEventListener('click',()=>{ show(i); lb.classList.add('open'); document.getElementById('lbX').focus(); }));
   document.getElementById('lbX').onclick = close;
   document.getElementById('lbP').onclick = () => show(cur-1);
   document.getElementById('lbN').onclick = () => show(cur+1);
-  lb.onclick = e => { if (e.target === lb) close(); };
-  document.addEventListener('keydown', e => { if(!lb.classList.contains('open')) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') show(cur-1); if(e.key==='ArrowRight') show(cur+1); });
+  lb.addEventListener('click', e => { if (e.target === lb) close(); });
+  document.addEventListener('keydown', e => {
+    if (!lb.classList.contains('open')) return;
+    if (e.key==='Escape') close(); if (e.key==='ArrowLeft') show(cur-1); if (e.key==='ArrowRight') show(cur+1);
+  });
 
-  const bar = document.getElementById('top-bar');
-  const onScroll = () => bar.classList.toggle('solid', window.scrollY > window.innerHeight * .6);
+  const nav = document.getElementById('nav');
+  const onScroll = () => nav.classList.toggle('solid', window.scrollY > 60);
   window.addEventListener('scroll', onScroll, {passive:true}); onScroll();
 
   const burger = document.getElementById('burger'), menu = document.getElementById('menu');
-  burger.onclick = () => { const o = menu.classList.toggle('open'); burger.setAttribute('aria-expanded',o); burger.textContent = o ? 'KAPAT' : 'MENÜ'; if(o) bar.classList.add('solid'); else onScroll(); };
-  menu.querySelectorAll('a').forEach(a => a.onclick = () => { menu.classList.remove('open'); burger.textContent='MENÜ'; burger.setAttribute('aria-expanded',false); });
+  burger.onclick = () => { const o = menu.classList.toggle('open'); burger.setAttribute('aria-expanded',o); burger.textContent = o ? 'Kapat' : 'Menü'; nav.classList.add('solid'); };
+  menu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { menu.classList.remove('open'); burger.textContent='Menü'; burger.setAttribute('aria-expanded',false); }));
 
   document.getElementById('yr').textContent = new Date().getFullYear();
 
-  const io = new IntersectionObserver(es => es.forEach(e => { if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } }), {threshold:.12});
+  const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), {threshold:.12});
   document.querySelectorAll('.rv').forEach(el => io.observe(el));
 }
 </script>
